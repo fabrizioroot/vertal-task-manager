@@ -1,0 +1,17 @@
+name: CI
+
+on:
+    push:
+      branches: [main]
+    pull_request:
+      branches: [main]
+
+jobs:
+  frontend_build:
+    Name: Frontend build
+    runs-on: alpine-latest
+    defaults:
+      run:
+        working-directory: ./frontend/
+      steps:
+        run: flutter run

@@ -1,0 +1,9 @@
+name: vertal-backend
+
+services:
+	postgres:
+		image: postgres:18.4
+		container_name: vertal-backend
+		restart: unless-stopped
+		ports:
+			- "127.0.0.1:5432:5432"
