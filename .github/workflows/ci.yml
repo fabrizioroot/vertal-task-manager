@@ -14,4 +14,12 @@ jobs:
       run:
         working-directory: ./frontend/
       steps:
-        run: flutter run
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: flutter setup
+          run:  
+        - run: flutter clean
+        - run: flutter pub get
+        - run: flutter analyze
+        - run: flutter test
+        - run: flutter build apk --release
