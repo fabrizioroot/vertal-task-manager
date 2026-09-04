@@ -104,7 +104,7 @@ Being an embedded database engine technology makes it the perfect choice for thi
 
 PostgreSQL is an open source object-relational database system. This engine is used to store information. For this project, its purpose is to store tasks assigned in the self hosted, collaborative environment.
 
-PostgreSQL has no built-in telemetry, usage analytics, or "phone home" mechanisms by default. It is a passive listener tool, so it doesn't trigger network actions by itself, only listens for API calls. It's supposed to be executed with the provided docker configuration so that it avoids unexpected behavior. It will, however, save logs in the server in a way that gives the operator enough information about problems while running. Because it is a network-capable database, the privacy of its data depends on the server operator; by following good practices, the database should remain safe from intruders.
+PostgreSQL does not include built-in telemetry, usage analytics, or "phone home" mechanisms by default. Within vertal, it is deployed as a self-hosted backend component that acts a passive listener tool, so it doesn't trigger network actions by itself, only listens for API calls. It's supposed to be executed with the provided docker configuration so that it avoids unexpected behavior. It will, however, save logs in the server in a way that gives the operator enough information about problems while running. Because it is a network-capable database, the privacy of its data depends on the server operator; by following good practices, the database should remain safe from intruders.
 
 #### Docker
 
@@ -167,3 +167,4 @@ The conditions and steps that every audit process will need to follow might be a
 ## About this document
 
 This document describes the privacy guarantees of the Vertal client. These guarantees apply to released versions of the application. Any change affecting these guarantees will be documented and reflected in the application version.
+

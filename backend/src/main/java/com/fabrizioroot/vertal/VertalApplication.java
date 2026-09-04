@@ -1,4 +1,4 @@
-package com.fabriziodev.vertal;
+package com.fabrizioroot.vertal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

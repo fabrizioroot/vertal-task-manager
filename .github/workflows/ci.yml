@@ -1,0 +1,26 @@
+name: CI
+image: alpine-latest
+
+on:
+    push:
+      branches: [main]
+    pull_request:
+      branches: [main]
+
+jobs:
+  frontend_build:
+    Name: Frontend build
+    runs-on: alpine-latest
+    defaults:
+      run:
+        working-directory: ../../frontend/
+      steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: flutter setup
+          run:  
+        - run: flutter clean
+        - run: flutter pub get
+        - run: flutter analyze
+        - run: flutter test
+        - run: flutter build apk --release

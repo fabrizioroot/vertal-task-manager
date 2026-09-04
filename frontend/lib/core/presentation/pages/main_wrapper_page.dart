@@ -1,5 +1,7 @@
+// frontend/lib/core/presentation/pages/main_wrapper_page.dart
+
 /*
- * Copyright 2026 Fabrizio.dev
+ * Copyright 2026 Fabrizio.root
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +34,14 @@ class _MainWrapperPage extends State<MainWrapperPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Placeholder(),
+      appBar: AppBar(
+        title: Text('Vertal'),
+        titleTextStyle: TextStyle(
+          color: Colors.white60,
+          fontSize: 30,
+        ),
+        backgroundColor: Colors.lightBlue,
+      ),
       bottomNavigationBar: BottomNav(
         currentIndex: _currentIndex,
         onTap: (index) {
