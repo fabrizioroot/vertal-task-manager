@@ -1,4 +1,4 @@
-package com.fabriziodev.vertal;
+package com.fabrizioroot.vertal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

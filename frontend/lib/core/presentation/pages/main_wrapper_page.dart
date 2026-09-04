@@ -1,7 +1,7 @@
 // frontend/lib/core/presentation/pages/main_wrapper_page.dart
 
 /*
- * Copyright 2026 Fabrizio.dev
+ * Copyright 2026 Fabrizio.root
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

@@ -1,6 +1,6 @@
 // frontend/lib/features/tasks/domain/entities/task_entity.dart
 /*
- * Copyright 2026 Fabrizio.dev
+ * Copyright 2026 Fabrizio.root
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
