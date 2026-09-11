@@ -1,5 +1,4 @@
 name: CI
-image: alpine-latest
 
 on:
     push:
@@ -9,18 +8,27 @@ on:
 
 jobs:
   frontend_build:
-    Name: Frontend build
-    runs-on: alpine-latest
+    name: Frontend build
+    runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ../../frontend/
-      steps:
-        - name: checkout
-          uses: actions/checkout@v4
-        - name: flutter setup
-          run:  
-        - run: flutter clean
-        - run: flutter pub get
-        - run: flutter analyze
-        - run: flutter test
-        - run: flutter build apk --release
+        working-directory: frontend/
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: flutter clean
+        run: flutter clean
+
+      - name: Flutter pub get
+        run: flutter pub get
+
+      - name: flutter analyze
+        run: flutter analyze
+
+      - name: flutter test
+        run: flutter test
+
+      - name: flutter build APK
+        run: flutter build apk --release
