@@ -18,7 +18,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - name: flutter setup
+      - name: flutter clean
         run: flutter clean
 
       - name: Flutter pub get
